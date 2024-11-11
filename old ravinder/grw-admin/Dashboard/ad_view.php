@@ -1,0 +1,234 @@
+<?php
+require_once("include/header.php");
+
+?>
+
+<style>
+   .table td, .table th {
+    padding: 0.7rem;
+    vertical-align: top;
+    border-top: 1px solid #e9ecef;
+}
+</style>
+
+
+
+<div class="main-container mt-152">
+
+    <div class="page-header mt-15">
+
+        <div class="pull-left">
+
+            <h2>List of ad </h2>
+
+        </div>
+        
+          <div class="pull-right">
+              <a href="ad_submit.php"><button class="btn btn-info">Ad insert</button></a>
+        </div>
+<div class="clearfix"></div>
+
+    </div>
+
+<div class="row-fluid">
+
+        <div class="span12">
+
+            <div class="widget">
+
+                <div class="widget-header">
+
+                    <div class="title">
+
+                        List of ad 
+
+                    </div>
+
+                </div>
+
+                <div class="widget-body">
+
+                   
+                    <div >
+
+                    </div>
+
+
+
+
+
+                    <div class="table-responsive">
+
+                        <table id="myTable" class="table table-striped">
+                            <thead>
+                                <tr>
+
+
+                                    <th>#</th>
+                                    <th>ad Task</th>
+                                    
+                                     <th>Action</th>
+                                     <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+                              <?php
+                               // $userId = $user["id"];
+                              $i=1;
+                                $query = mysqli_query($db, "SELECT * FROM  `googleadd` order by status asc");
+                               while($dataQuery = mysqli_fetch_array($query)){
+                                  
+                                ?>
+                                <tr>
+
+                                    <td><?php echo $i; $i++;?>   </td>
+                                      <td><?php echo $dataQuery['id'];?>   </td>
+                                    <td><div class="box-header with-border">
+                            <h3 class="box-title">
+                            </h3>
+                           <?php
+                           if($dataQuery['url']!=''){
+                               ?>
+                                      <embed src="<?php echo $dataQuery['url']; ?>" width="100%" height="340">
+                                   <?php
+                           }else{
+                           ?>
+                                      <img src="<?php echo $dataQuery['image'];?>" class="ad-show" style="width:20%"> 
+                           <?php } ?>
+                        </div>   </td>
+                                    <?php if($dataQuery['status']==0) { ?>
+                                    <td><a onclick="confirm('Are you sure!')" href="controller/submit.php?ad_deactive=1&uid=<?php echo $dataQuery['id']; ?>" class="btn btn-danger">Deactive </a> </td>
+                                    <?php }else{ ?>
+                                    <td><a onclick="confirm('Are you sure!')" href="controller/submit.php?ad_deactive=0&uid=<?php echo $dataQuery['id']; ?>" class="btn btn-success">Active </a> </td>
+                                    <?php } ?>
+                                                                  <td><a onclick="confirm('Are you sure!')" href="controller/submit.php?ad_delete=0&uid=<?php echo $dataQuery['id']; ?>" class="btn btn-danger">Delete </a> </td>
+
+                                </tr>
+                               <?php } ?>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+<div class="modal fade" id="overlay">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Please Enter confirmation description </h4>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                    <form action="controller/function.php" method="POST">
+                                        <input type="hidden" name="refId" id='uid' value="">
+                                        <div style="width:60%;margin: 0 auto;"> 
+                                            <div class="control-group">
+                                             Received Confirm Amount
+                                             <input type='text' name='amount' class="form-control">
+                                            </div>
+                                            <div class="control-group">
+                                                <!--<input type="text" onChange="checkUser()" id="user" onFocus="checkUser()" class="form-control" name="userId" placeholder="Enter User Id">-->
+                                              Remarks  <textarea name='remarks' class="form-control"></textarea>
+                                                <div id="user_check_BPg"></div>
+                                            </div>
+                                            <div class="control-group">
+                                                <input type="submit"  class="btn btn-success" name="investconfirmation" value="submit">
+                                                <input type="Reset" value="Reset"  class="btn btn-danger">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="overlay1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Please Enter rejected description </h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="controller/function.php" method="POST">
+                                        <input type="hidden" name="refId" id='uid1' value="">
+                                        <div style="width:60%;margin: 0 auto;"> 
+                                            <div class="control-group">
+                                                <!--<input type="text" onChange="checkUser()" id="user" onFocus="checkUser()" class="form-control" name="userId" placeholder="Enter User Id">-->
+                                                <textarea name='remarks' class="form-control"></textarea>
+                                                <div id="user_check_BPg"></div>
+                                            </div>
+                                            <div class="control-group">
+                                                <input type="submit"  class="btn btn-default" name="rejected" value="submit">
+                                                <input type="Reset" value="Reset"  class="btn btn-default">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    <script>
+
+        $(document).ready(function () {
+
+            $('#myTable').dataTable({
+
+                "paging": false,
+
+                "ordering": false,
+
+            });
+
+        });
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    
+
+      <script type="text/javascript" src="../../js/script.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+     <script>
+ function checkout(id){
+             $("#uid").val(id);
+            $('#overlay').modal('show');
+        }
+ function checkout1(id){
+             $("#uid1").val(id);
+            $('#overlay1').modal('show');
+        }
+        $(document).ready(function () {
+            $('#myTable').dataTable({
+                "paging": false,
+                "ordering": false,
+            });
+        });
+    </script>
+
+
+
+    <!-- container-fluid -->
+
+</div>
+
+<!--End of Tawk.to Script-->
+<?php 
+include 'footer.php';
+?>
+
+

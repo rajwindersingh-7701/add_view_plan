@@ -1,0 +1,638 @@
+@media (max-width: 991px) {
+    body .landing_wrapper .header_bottom nav li .sub-menu {
+        width: 100%;
+        text-align: center;
+    }
+    body .landing_wrapper .header_top {
+        height: 90px;
+        text-align: center;
+    }
+    body .landing_wrapper .header_top .header_top_right {
+        text-align: center;
+    }
+    body .landing_wrapper .header_middle .currency_icons li {
+        margin: 0 25px;
+    }
+    nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        text-align: center !important;
+        height: 100%;
+        background-color: #000;
+        z-index: 9989;
+        overflow-y: scroll;
+        padding: 100px 0;
+        visibility: hidden;
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+    }
+    nav.show{
+        visibility: visible;
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+    .menu_close_btn {
+        display: block !important;
+        background-color: #fff !important;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        cursor: pointer;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+    }
+    .menu_close_btn:hover{
+        opacity: .8;
+    }
+    body .landing_wrapper .header_bottom nav li {
+        display: block;
+        line-height: 40px;
+        background-color: #222;
+        border-bottom: 1px solid #626262;
+    }
+    body .landing_wrapper .header_bottom nav li a:hover {
+        background-color: #111;;
+    }
+    body .landing_wrapper .header_bottom .menu_btn {
+        display: block;
+    }
+    body .landing_wrapper .landing_wrapper_content h2 {
+        font-size: 34px !important;
+    }
+    body .btc_excng_wrapper .btc_excng_wrapper_slider {
+        padding: 20px 0;
+    }
+    body .btc_excng_wrapper .btc_excng_wrapper_slider span {
+        display: inline-block;
+        line-height: 50px;
+    }
+    body .btc_excng_wrapper .btc_excng_wrapper_input input {
+        margin-bottom: 25px;
+    }
+    body .btc_excng_wrapper .btc_excng_wrapper_bottom {
+        padding: 30px 0 40px 0;
+    }
+    .wrapper.service_wrapper {
+        padding-bottom: 70px;
+    }
+    body .service_wrapper .service_title {
+        font-size: 32px;
+    }
+    body .opportunity_wrapper .opportunity_title {
+        font-size: 23px;
+    }
+    body .download_app_wrapper .wrapper_title {
+        line-height: 40px;
+        font-size: 30px;
+    }
+    body .download_app_wrapper .btn_default {
+        padding: 0 30px;
+    }
+    body .download_app_wrapper .app_stores_links {
+        margin-top: 30px;
+    }
+    body .dis_token_wrapper .token_pie_chart {
+        text-align: center;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt1 {
+        right: 65px !important;
+        text-align: left;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt2 {
+        right: 45px !important;
+        top: 125px !important;
+        text-align: left;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt3 {
+        bottom: -8px !important;
+        right: 89px !important;
+        text-align: left;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt4 {
+        text-align: right;
+        top: 152px !important;
+        left: 46px !important;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt5 {
+        left: 69px !important;
+    }
+    body .dis_token_wrapper .token_pie_chart .logo_icon {
+        left: 44% !important;
+    }
+    .token_info_item {
+        margin-top: 50px;
+    }
+    body .steps_03_wrapper .steps_03_item .steps_03_count {
+        font-size: 35px;
+    }
+    body .faq_wrapper .card .card-header {
+        height: 40px;
+        line-height: 40px;
+    }
+    body .faq_wrapper .card .card-body {
+        line-height: 23px;
+    }
+    body .token_wrapper .total_num_of_tokens p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    body .token_wrapper .total_num_of_tokens h1 {
+        font-size: 40px;
+    }
+    body .token_wrapper .token_counter_details .timeout_counter {
+        margin-bottom: 50px;
+    }
+    .wrapper.current_exchange_wrapper {
+        padding-bottom: 70px;
+    }
+    .wrapper.current_exchange_wrapper .cur_ex_item {
+        margin-bottom: 30px;
+    }
+    body .footer_wrapper .footer_middle {
+        padding-left: 0;
+        border: none;
+        margin: 30px 0;
+    }
+    body .footer_bottom {
+        line-height: 40px;
+        text-align: center;
+    }
+    body .landing_02_wrapper_content .owl-nav button.owl-next {
+        right: 40%;
+        left: auto;
+        top: auto;
+    }
+    body .dis_token_wrapper .token_info_item .td_breakdown_bodred {
+        text-align: left;
+    }
+    .blog_slidebar {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:668px) and (max-width: 991px) {
+    body .landing_wrapper .landing_wrapper_content .landing_countdown {
+        padding: 40px 10px;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown .landing_cd_title {
+        font-size: 16px !important;
+        margin-bottom: 20px;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown .landing_option {
+        font-size: 14px !important;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown #countdown li .time_counter {
+        height: 40px !important;
+        width: 40px !important;
+        line-height: 40px !important;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown .landing_cd_subtitle {
+        margin-bottom: 20px;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown #countdown li .counter_text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    body .contact_wrapper .gmap-area {
+        margin-bottom: 30px;
+    }
+    body .search_popup form {
+        width: 80%;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown {
+        padding: 40px !important;
+        margin-top: 50px;
+    }
+    .mt40{
+        margin-top: 40px;
+    }
+    body .download_app_wrapper .app_preview {
+        padding-left: 0;
+    }
+    body .download_app_wrapper .app_preview img {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt1 {
+        right: 25px !important;
+        text-align: left;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt2 {
+        right: 10px !important;
+        top: 99px !important;
+        text-align: left;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt3 {
+        bottom: -9px !important;
+        right: 44px !important;
+        text-align: left;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt4 {
+        text-align: right;
+        top: 120px !important;
+        left: 10px !important;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt5 {
+        left: 30px !important;
+    }
+    body .dis_token_wrapper .token_pie_chart .logo_icon {
+        left: 43% !important;
+    }
+    body .dis_token_wrapper .token_pie_chart {
+        font-size: 14px;
+    }
+    .wrapper.steps_03_wrapper{
+        padding-bottom: 70px;
+    }
+    .wrapper.steps_03_wrapper .steps_03_item{
+        margin-bottom: 30px;
+    }
+    body .faq_wrapper .faq_video {
+        margin-bottom: 30px;
+    }
+    body .token_wrapper .total_num_of_tokens .tno_token_left {
+        border-right: 1px solid #2d3a5b;
+    }
+    body .token_wrapper .token_wrapper_bottom .pl-25 {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    body .token_wrapper .token_wrapper_bottom p.text_colored {
+        margin-top: -10px;
+    }
+    body .customer_wrapper .lr_bordered {
+        border: 0;
+    }
+    body .customer_wrapper .coundown_single h2 {
+        margin-bottom: 5px;
+    }
+    .coundown_single {
+        margin-bottom: 30px;
+    }
+    body .blog_wrapper .blog_item .card-body .date {
+        display: block;
+    }
+    body .blog_wrapper .blog_item .card-body .blog_title a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    body .blog_wrapper .blog_item .card-body .bolg_sm_details {
+        line-height: 20px;
+    }
+    body .service_wrapper .service_single_opt:hover::after {
+        -webkit-transform: scaleX(0.97) scaleY(0.94);
+        -ms-transform: scaleX(0.97) scaleY(0.94);
+        transform: scaleX(0.97) scaleY(0.94);
+    }
+    body .landing_02_wrapper_content .slider_floating_img img {
+        width: auto !important;
+        height: 300px !important;
+        margin: 25px 0;
+    }
+    body .about_wrapper .about_video {
+        margin-top: 30px;
+    }
+    body .opportunity_wrapper .opportunity_title {
+        margin-top: 30px;
+    }
+    .col-md-6.col-12.blog_details_tags.text-right {
+        text-align: left !important;
+        margin-top: 10px !important;
+    }
+    body .blog_items .single_blog_item_details .author_widget .author_details {
+        padding: 30px 45px 30px 45px;
+    }
+    .google_map{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    #scrollUp{
+        display: none !important;
+    }
+    .container{
+        padding: 0 15px;
+    }
+    body .landing_wrapper .landing_wrapper_content .col-md-4.pl-0{
+        padding-left: 15px !important;
+    }
+    body .btc_excng_wrapper .btc_excng_wrapper_header .btc_excng_wrapper_header_right div {
+        display: block;
+        height: 35px;
+        line-height: 35px;
+        padding: 0 10px;
+    }
+    body .btc_excng_wrapper .btc_excng_wrapper_header .btc_excng_wrapper_header_right .border_left_1 {
+        border: 0;
+        display: inline-block;
+    }
+    body .btc_excng_wrapper .btc_excng_wrapper_header .btc_excng_wrapper_header_right {
+        border-radius: 10px;
+        margin-left: 0;
+        width: 100%;
+        padding: 15px 0;
+    }
+    body .road_map_wrapper .timeline__content .vertical_divider {
+        display: none;
+    }
+    body .road_map_wrapper .timeline__content h2 {
+        margin-bottom: 10px;
+    }
+    body .road_map_wrapper .timeline__content {
+        padding: 15px 0;
+    }
+    body .landing_02_wrapper_content .owl-nav button.owl-next {
+        right: 30%;
+        left: auto;
+        top: auto;
+    }
+    .dis_token_wrapper .container,
+    .dis_token_wrapper .col-lg-4.col-md-12.p-0 {
+        padding: 0 15px !important;
+    }
+    body .landing_02_wrapper_content .owl-nav button {
+        left: 40%;
+    }
+    body .landing_02_wrapper_content .owl-nav button.owl-next {
+        right: 20%;
+        left: auto;
+        top: auto;
+    }
+    .owl-nav button {
+        top: auto;
+        bottom: -70px;
+        left: 0 !important;
+        height: 45px;
+        line-height: 45px;
+        width: 45px;
+    }
+    .owl-nav button.owl-next {
+        left: auto !important;
+        right: 0 !important;
+    }
+    body .landing_02_wrapper_content .owl-nav button {
+        left: 20% !important;
+    }
+    body .landing_02_wrapper_content .owl-nav button.owl-next {
+        left: 40% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    body .landing_wrapper .header_top {
+        font-size: 12px !important;
+    }
+    .token_details_single_info.mb-0.mb-30{
+        margin-bottom: 30px !important;
+    }
+    body .btc_excng_wrapper .btc_excng_wrapper_input input {
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+    body .blog_items .single_blog_item_details .author_widget span.text_colored {
+        float: none;
+        display: block;
+        margin-top: 5px;
+    }
+    body .service_wrapper .service_title {
+        font-size: 26px;
+    }
+    body .download_app_wrapper .wrapper_title {
+        font-size: 26px;
+    }
+    .wrapper_title {
+        font-size: 30px;
+    }
+    body .dis_token_wrapper .token_pie_chart .logo_icon {
+        height: 40px;
+    }
+    body .dis_token_wrapper .token_pie_chart {
+        font-size: 12px;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt1 {
+        right: 5px !important;
+        top: 2px;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt5 {
+        left: 21px !important;
+        top: 3px;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt2 {
+        right: 10px !important;
+        top: 66px !important;
+        text-align: left;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt4 {
+        text-align: right;
+        top: 82px !important;
+        left: 4px !important;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt3 {
+        bottom: -14px !important;
+        right: 5px !important;
+        text-align: left;
+    }
+    body .token_wrapper .token_counter_details .timeout_counter .time_counter {
+        font-size: 25px !important;;
+    }
+    body .token_wrapper .token_counter_details .timeout_counter .counter_text {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    body .token_wrapper .token_counter_details .timeout_counter li.vertical_divider {
+        height: 45px;
+        margin: 0 !important;
+    }
+    body .token_wrapper .token_counter_details {
+        padding: 60px 20px;
+    }
+    body .opportunity_wrapper .opportunity_title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    body .landing_wrapper .header_top a {
+        display: inline-block;
+    }
+    body .road_map_wrapper .timeline__content .vertical_divider {
+        width: 30px;
+        left: -10px;
+    }
+    body .landing_02_wrapper_content .btn_white {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .wrapper.team_wrapper,
+    .wrapper.blog_wrapper{
+        padding-bottom: 150px;
+    }
+    .wrapper.team_wrapper .owl-nav {
+        padding-top: 25px;
+    }
+    .owl-nav button {
+        top: auto;
+        bottom: -70px;
+        left: 40%;
+        height: 45px;
+        line-height: 45px;
+        width: 45px;
+    }
+    .owl-nav button.owl-next {
+        left: auto;
+        right: 40%;
+    }
+    .owl-nav button::after {
+        top: -17%;
+        left: -18%;
+    }
+    .wrapper.team_wrapper .owl-nav {
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    body .landing_02_wrapper_content .owl-nav button {
+        left: 40%;
+    }
+    body .landing_wrapper .landing_wrapper_content h2 {
+        font-size: 46px;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown .landing_cd_title {
+        font-size: 19px;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown #countdown li .time_counter {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown #countdown li:nth-child(2) {
+        margin: 0;
+        margin-left: 0;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown #countdown li:nth-child(3) {
+        margin: 0 -3px;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown .landing_option .landing_line_info_left, body .landing_wrapper .landing_wrapper_content .landing_countdown .landing_option .landing_line_info_center, body .landing_wrapper .landing_wrapper_content .landing_countdown .landing_option .landing_line_info_right {
+        left: 5px;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown .landing_option .landing_line_info_center {
+        left: 50% !important;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown .landing_option .landing_line_info_right {
+        left: auto;
+        right: 5px;
+    }
+    body .landing_wrapper .landing_wrapper_content .landing_countdown .landing_cd_subtitle {
+        font-size: 17px;
+    }
+    body .btc_excng_wrapper .btc_excng_wrapper_slider .vertical_divider {
+        margin: -5px 10px;
+    }
+    body .btc_excng_wrapper .btc_excng_wrapper_slider i {
+        margin-right: 4px;
+    }
+    body .btc_excng_wrapper .btc_excng_wrapper_slider .text_colored {
+        margin-left: 5px;
+    }
+    body .btc_excng_wrapper .btc_excng_wrapper_header .btc_excng_wrapper_header_left {
+        margin-bottom: 10px;
+    }
+    body .btc_excng_wrapper .btc_excng_wrapper_input button.btn_default {
+        padding: 0 25px;
+        margin-right: 0;
+    }
+    body .service_wrapper .service_single_opt {
+        padding-right: 10px;
+    }
+    body .service_wrapper .service_single_opt .service_single_opt_title {
+        font-size: 16px;
+    }
+    body .opportunity_wrapper .opportunity_subtitle_01 {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    body .opportunity_wrapper .opportunity_subtitle_02 {
+        margin-bottom: 20px;
+    }
+    body .opportunity_wrapper .btn_default {
+        margin-right: 0;
+        padding: 0 30px;
+    }
+    body .download_app_wrapper .da_wrapper_subtitle {
+        font-size: 14px;
+    }
+    body .dis_token_wrapper .token_pie_chart .logo_icon {
+        left: 42.7%;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt1 {
+        right: 5px;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt2 {
+        right: -2px;
+        top: 101px;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt3 {
+        bottom: -14px;
+        right: 31px;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt5 {
+        left: 19px;
+    }
+    body .dis_token_wrapper .token_pie_chart .pie_chart_txt4 {
+        text-align: right;
+        top: 123px;
+        left: -1px;
+    }
+    body .dis_token_wrapper .token_info_item div span {
+        height: 15px;
+        width: 15px;
+    }
+    body .dis_token_wrapper .token_info_item div p {
+        font-size: 14px;
+        top: -2px;
+    }
+    body .steps_03_wrapper .steps_03_item .steps_03_count {
+        right: 30px;
+    }
+    body .token_wrapper .token_counter_details .timeout_counter li.vertical_divider {
+        margin: 1px 5px;
+    }
+    body .token_wrapper .token_counter_details .timeout_counter .time_counter {
+        font-size: 40px;
+    }
+    body .token_wrapper .token_wrapper_bottom p {
+        font-size: 16px;
+    }
+    body .current_exchange_wrapper .cur_ex_item .exchange_price p {
+        font-size: 14px;
+    }
+    body .customer_wrapper .coundown_single h2 {
+        margin-bottom: 15px;
+    }
+    body .customer_wrapper .coundown_single p {
+        font-size: 20px;
+    }
+    .app_preview img {
+        height: auto;
+        width: 100%;
+    }
+}
